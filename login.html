@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleLogin.css">
+
+    <!----font family---->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;0,1000;1,300&display=swap"
+        rel="stylesheet">
+
+    <!----icons---->
+
+    <title>Login Video2audio</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="Login">Login</div>
+            <hr>
+            <form action="http://localhost:5100/login" >
+                <label for="nameUser">Nome :</label>
+                <input type="text" required id="nameUser" name="name">
+
+                <label for="password">Senha :</label>
+                <input type="password" required placeholder="Deve conter letras e numeros" id="password">
+
+                <label for="emailUser">Email :</label>
+                <input type="email" placeholder="Para recuperação de Senha" id="emailUser">
+
+                <button type="submit" formmethod="post" class="btn-Login">Login</button>
+
+            </form>
+
+            <div class="another-options">
+                <a href="register.html" id="newUserCreate" class="new-user-create">Criar conta</button>
+                <a href="#" id="recover-password" class="recover-password">Recuperar Senha</a>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
